@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+
+/* for linked elements */
+
+a {
+    outline:transparent;
+    text-decoration: none;
+}
+
+a:link {
+    color:#1E3B5C;
+}
+
+a:visited {
+        color: #8B8C89;
+
+}
+
+a:hover {
+    color: #6287b1;
+}
+
+a:active {
+        color: #E3D5CA;
+
+}                       
+
+/* for screen sizing */
+/* 360 */
+
+@media screen and (min-width:360px) {
+        .container {
+            display:flex;
+            width:100vw;
+            height:100vh;
+            background:#F5EBE0;
+            justify-content: center;
+        }
+
+        button:hover{
+            color: #6287b1;
+        }
+
+        .menubutton {
+            button {
+                border: none;
+                background-color: inherit;
+                padding: 0;
+                font: inherit;
+                cursor: pointer;
+                appearance: none; 
+                font-size:20px;
+                font-family: 'NT Epika regular', sans-serif;
+                margin-left:15px;
+                margin-top:15px;
+            }
+        }
+
+        .menu {
+        background: #e3d5ca9c;
+        font-size: 150%;
+        font-family: 'NT Epika Regular', sans-serif;
+        position:fixed;
+        top:100px;
+        margin-left:30px;
+        height:300px;
+        width:300px;
+        border-radius:50%;
+        padding:20px;
+        text-align:left;
+        visibility: hidden;
+        opacity: 0;
+        
+        transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
+        }
+
+        .menu.active {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 250ms ease-in, visibility 0ms ease-in 0ms;
+        }
+
+        .title {
+            font-size:70px;
+            font-family: 'NT Epika Regular', sans-serif;
+            color:#1E3B5C;
+            margin: 0;
+            margin-top:20px;
+            animation: fade 4s 4s infinite alternate;
+
+        }
+
+        @keyframes fade{
+            0% {
+                opacity:100%;
+            }
+            100%{
+                opacity:0%;
+            }
+        } 
+
+        .form {
+            position:fixed;
+            margin-left:30px;
+            margin-top:130px;
+        }
+
+        textarea {
+            width:400px;
+            height:350px;
+            font-size:15px;
+            font-family: 'instrument sans';
+            border: solid #E3D5CA;
+            padding:10px;
+        }
+
+        button {
+        font-family: 'instrument sans';
+        font-size:15px;
+        border-radius: 5px;
+        background-color:#F5EBE0;
+        padding:4px;
+        border: none;
+        cursor:pointer;  
+        display: block;
+        margin-top:0;
+        margin:auto;
+    } 
+
+}
+
+/* desktop/tablet */
+/* 1000px */
+
+@media screen and (min-width:1000px) {
+    .containerlanding {
+        display:flex;
+        width:100vw;
+        height:100vh;
+        background:rgb(237, 0, 12);
+    }
+
+} 
+
+
+/* default style */
+
+body {
+    font-family: 'NT Epika Regular', sans-serif;
+    background:#F5EBE0;
+    color:#1E3B5C;
+
+}
+
+ul {
+    margin-top:50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+
+/* min-width = mobile first */
+/* for mobile first we want our media queries to increase in pixel size as we move down our css document */
+
+/*300, 360, 400, 800, 1000*/
+
+
+/* 
+body {
+        background:lightpink;
+    }
+
+    main {
+        flex-wrap:wrap;
+    }
+
+    .left {
+        width:100%;
+    }
+
+    .center, .right {
+        width:calc(50% - 5px);
+    }
+    
+/*  */
+
+

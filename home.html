@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <title>homepage</title>
+        <link rel="stylesheet" href="mainhome.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.cdnfonts.com/css/nt-epika" rel="stylesheet">
+        <style>
+        @import url('https://fonts.cdnfonts.com/css/nt-epika');
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      
+    </head>
+
+    <body>
+
+                    <div class="menubutton">
+                    <button onclick="change()">Menu</button>
+            </div>
+
+        <div class="container">
+
+            <div class="title">Obscura≐</div>
+
+            <div class="form">
+                
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key"     value="1b720571-9530-42e8-845b-c925fab35985">                      
+                        <textarea name="message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </input>
+                </form> 
+
+            </div>
+
+
+       </div>
+
+            
+            <div class="menu">
+                <ul>
+                    <li> 
+                    <a href="about.html">Instructions</a>
+                    </li>
+                    <li> 
+                    <a href="about.html">About</a>
+                    </li>
+                    <li> 
+                    <a href="about.html">Video</a>
+                    </li>
+                </ul>
+            </div>
+
+
+         <script>
+                var menu = document.querySelector(".menu");
+                function change() {
+                menu.classList.toggle("active");
+                }
+            </script>
+
+        <script src="jquery-4.0.0.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+
+
+    </html>
