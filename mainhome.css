@@ -137,18 +137,17 @@ a:active {
         border: solid 1px #f7f1ec;
         cursor:pointer;  
         display: block;
-        margin-top:0;
+        margin-top:10px;
         margin:auto;
     } 
 
 }
 
-
 /* default style */
 
 body {
     font-family: 'NT Epika Regular', sans-serif;
-    background:#f7f1ec;
+    background:#57524b;
     color:#1E3B5C;
 }
 ul {
