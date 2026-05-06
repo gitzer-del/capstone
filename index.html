@@ -27,10 +27,15 @@
             <div class="form">
                 
                 <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key"     value="1b720571-9530-42e8-845b-c925fab35985">                      
+                    <input type="hidden" name="access_key"     value="1b720571-9530-42e8-845b-c925fab35985">   
+
+
                         <textarea name="message" required></textarea>
                         <button type="submit">Send</button>
                     </input>
+                    <!-- Custom URL -->
+                    <input type="hidden" name="redirect" value="https://obscurus.click/video.html">
+                    
                 </form> 
 
             </div>
@@ -60,6 +65,13 @@
                 menu.classList.toggle("active");
                 }
             </script> -->
+
+        <script>
+        window.onload = function() {
+            // Reset the form fields when the page loads
+            document.getElementById("form").reset();
+        };
+        </script>
 
         <script src="jquery-4.0.0.min.js"></script>
         <script src="jquery-ui.min.js"></script>
