@@ -48,6 +48,10 @@ a:active {
             background-color:#6287b1;
         }
 
+        .desktop {
+            display:none;
+        }
+
         /* .menubutton {
             button {
                 border: none;
@@ -157,4 +161,14 @@ li {
     list-style-type: none;
 }
 
+@media screen and (min-width:1000px) {
 
+.desktop {
+    position:fixed;
+    font-size:25px;
+    color:#f7f1ec;
+    display:block;
+    margin:auto 0;
+}
+
+}
