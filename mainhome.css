@@ -96,8 +96,7 @@ a:active {
             font-size:70px;
             font-family: 'NT Epika Regular', sans-serif;
             color:#f7f1ec;
-            margin: 0;
-            margin-top:120px;
+            margin-top:90px;
             animation: fade 4s 4s infinite alternate;
 
         }
