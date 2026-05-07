@@ -11,6 +11,7 @@ body {
     display:flex;
     justify-content: center; 
     align-items: center;      /* Vertically centers children */
-    height: 100vh;      
+    height: 100vh; 
+    max-width: 100%;     
     
 }
