@@ -92,11 +92,12 @@ a:active {
         } */
 
         .title {
+            position:absolute;
             font-size:70px;
             font-family: 'NT Epika Regular', sans-serif;
             color:#f7f1ec;
             margin: 0;
-            margin-top:82px;
+            margin-top:120px;
             animation: fade 4s 4s infinite alternate;
 
         }
@@ -111,9 +112,13 @@ a:active {
         } 
 
         .form {
-            position:fixed;
-            margin-left:30px;
-            margin-top:160px;
+            position:absolute;
+            display:flex;
+            justify-content: center; 
+            align-items: center;      /* Vertically centers children */
+            height: 100vh; 
+            max-width: 100%;     
+
         }
 
         textarea {
@@ -141,8 +146,7 @@ a:active {
         border: solid 1px #f7f1ec;
         cursor:pointer;  
         display: block;
-        margin-top:10px;
-        margin:auto;
+        margin:5px auto ;
 
     } 
 
@@ -171,6 +175,7 @@ li {
     color:#f7f1ec;
     display:block;
     margin:auto 0;
+    margin-top:400px;
 }
 
 }
