@@ -4,10 +4,13 @@
 
 body {
     background-color: black;
+    max-height:fit-content;
  }
 
 .videocs {
-    display:grid;
-    place-items: center; /* Centers both axes at once */
-    height: 100vh;      /* Required for vertical centering */
+    display:flex;
+    justify-content: center; 
+    align-items: center;      /* Vertically centers children */
+    height: 100vh;      
+    
 }
