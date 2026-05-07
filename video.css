@@ -7,7 +7,7 @@ body {
  }
 
 .videocs {
-    display:flex;
-    justify-content: center;
-    margin-top:20px;
+    display:grid;
+    place-items: center; /* Centers both axes at once */
+    height: 100vh;      /* Required for vertical centering */
 }
