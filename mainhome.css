@@ -117,8 +117,8 @@ a:active {
         }
 
         textarea {
-            width:380px;
-            height:380px;
+            width:340px;
+            height:300px;
             font-size:15px;
             font-family: 'instrument sans';
             border: solid #f7f1ec;
